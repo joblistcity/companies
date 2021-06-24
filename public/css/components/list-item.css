@@ -1,0 +1,16 @@
+/* list-item */
+list-item {
+    display: flex;
+    flex-direction: column;
+}
+
+/* modifiers */
+list-item[direction="row"] {
+    flex-direction: row;
+}
+
+list-item[type="tags"]::before {
+    content: "#";
+    display: block;
+    padding-right: 0.3rem;
+}

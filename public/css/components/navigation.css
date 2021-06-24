@@ -1,0 +1,64 @@
+/* navigation */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav[role="breadcrumb"] a,
+nav[role="main"] a {
+    color: var(--color-link);
+    background-color: var(--color-bg);
+    padding: 0.1rem 0.3rem;
+}
+
+nav[role="main"] nav-item,
+nav[role="breadcrumb"] nav-item {
+    text-transform: lowercase;
+}
+
+nav[role="breadcrumb"] nav-item::before {
+    content: '/';
+    color: lightgray;
+}
+
+nav[role="breadcrumb"] nav-item:first-child::before {
+    content: '';
+}
+
+nav[role="breadcrumb"] nav-item:first-of-type a {
+    text-decoration: none;
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+nav[role="main"] {}
+nav[role="main"]:before {
+    content: ':';
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+nav[role="main"] nav-item {
+    position: relative;
+    display: flex;
+}
+
+nav[role="tags"] nav-item {
+    /* because hugo uses the title when taxonomy has a content page */
+    text-transform: lowercase;
+}
+
+nav[role="actions"] {
+    justify-content: flex-end;
+}
+
+nav-item {
+    margin-right: 0.5rem;
+}
+
+nav-item[active] a,
+nav[role="breadcrumb"] nav-item:last-of-type a {
+    font-weight: bold;
+}
