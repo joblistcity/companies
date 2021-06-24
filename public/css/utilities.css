@@ -1,0 +1,9 @@
+/* utilities:
+Some things to use sporadically on some elements,
+when it is too annoying to write for them something specific.
+Should most probably be refactored, at some point,
+into meaningful components */
+
+.u-text-right {
+    text-align: right;
+}

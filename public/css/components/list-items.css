@@ -1,0 +1,32 @@
+/* list-items */
+
+list-items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+list-items ul {
+    padding: 0;
+}
+
+list-items li {
+    list-style: none;
+}
+
+list-items li,
+list-items list-item {
+    margin-bottom: 1.5rem;
+}
+
+/* modifiers */
+list-items[direction="row"] ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+list-items[direction="row"] li {
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}

@@ -1,0 +1,22 @@
+/* For vertical 'visual' dynamics */
+.Section {
+    margin-bottom: calc(var(--size) * 1.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.Section--heightFull {
+    flex-grow: 1;
+}
+
+.Section--heightCenter {
+    justify-content: center;
+}
+.Section--widthCenter {
+    align-items: center;
+}
+
+
+.Section-header {
+    padding: calc(var(--size) * 2);
+}

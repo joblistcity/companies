@@ -1,0 +1,15 @@
+/* details */
+details[open] summary {
+    padding-bottom: 1rem;
+}
+
+/* summary */
+summary {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    cursor: pointer;
+}
+
+summary:focus {
+    outline: none;
+}

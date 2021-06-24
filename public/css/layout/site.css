@@ -1,0 +1,67 @@
+/* site theme */
+.Site {
+    background-color: var(--color-bg);
+    flex-grow: 1;
+}
+
+.Site-header {
+    margin-bottom: 2rem;
+    padding-top: 0.7rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    background-color: var(--color-bg);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 0.5rem;
+}
+
+.Site-main {
+    padding-bottom: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.Site--fullscreen {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.Site--fullscreen,
+.Site--fullscreen .Site-main,
+.Site--fullscreen map-list {
+    display: block;
+    height: 100vh;
+}
+
+.Site--fullscreen map-list {}
+
+.Site--fullscreen .Site-header {
+    position: fixed;
+    top: 0;
+    /* horinzontaly centered visually */
+    left: 50%;
+    transform: translateX(-50%);
+    /* above map */
+    z-index: 1000;
+}
+
+.Site--fullscreen .Site-main {
+    margin-top: 0;
+}
+
+.Theme {
+    opacity: 0.1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+}
+
+.Theme:checked+.Site {
+    background-color: var(--color-bg--dark);
+}

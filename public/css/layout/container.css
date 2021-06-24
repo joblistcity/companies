@@ -1,0 +1,12 @@
+/* For horizontal 'visual' dynamics */
+.Container {
+    width: 100%;
+    max-width: 60rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.Site-header.Container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}

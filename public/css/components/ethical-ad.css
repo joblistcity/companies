@@ -1,0 +1,5 @@
+@media (min-width: 40rem) {
+	.EthicalAd--mobile {
+		display: none;
+	}
+}

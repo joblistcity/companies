@@ -1,0 +1,8 @@
+/* buttons */
+.Button--createJob {
+    color: var(--color-button-create);
+    background-color: var(--color-button-create-brackground);
+    text-decoration: underline;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+}
